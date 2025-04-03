@@ -5,15 +5,14 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: "/ResumeFinder/", // 🔥 Move this here, not inside `server`
   server: {
-    base: "/ResumeFinder/", // Ensure correct base path for GitHub Pages
     host: "::",
     port: 8080,
   },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === "development" && componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {

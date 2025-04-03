@@ -18,7 +18,15 @@
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-    <script type="module" crossorigin src="/ResumeFinder/assets/index-CMDUsb_F.js"></script>
+
+    <script>
+      var path = window.location.pathname;
+      if (path.startsWith("/ResumeFinder/") && path !== "/ResumeFinder/") {
+        window.location.href = "/ResumeFinder/";
+      }
+    </script>
+    
+    <script type="module" crossorigin src="/ResumeFinder/assets/index-BIFuka1P.js"></script>
     <link rel="stylesheet" crossorigin href="/ResumeFinder/assets/index-8gbhebw2.css">
   </head>
 
